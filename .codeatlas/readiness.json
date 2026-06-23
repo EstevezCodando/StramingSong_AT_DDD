@@ -1,0 +1,18 @@
+{
+  "ai_readiness": 100,
+  "tech_debt": 0,
+  "factors": {
+    "typed": 1.0,
+    "documented": 1.0,
+    "sized": 1.0,
+    "coupling": 1.0,
+    "tested": 1.0
+  },
+  "debt_breakdown": {
+    "weighted_debt": 0.0,
+    "code_nodes": 322,
+    "debt_per_node": 0.0,
+    "issues_total": 0,
+    "issues_by_severity": {}
+  }
+}

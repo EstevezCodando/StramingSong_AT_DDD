@@ -1,0 +1,1223 @@
+{
+  "project": "StramingSong",
+  "generated_at": "2026-06-11T00:22:13.981925",
+  "stats": {
+    "total_nodes": 921,
+    "total_edges": 1070,
+    "nodes_by_type": {
+      "project": 1,
+      "file": 69,
+      "note": 1,
+      "concept": 1,
+      "class": 51,
+      "method": 271,
+      "import": 373,
+      "endpoint": 20,
+      "variable": 118,
+      "contract": 16
+    },
+    "edges_by_type": {
+      "contains": 69,
+      "defines": 498,
+      "imports": 373,
+      "calls": 77,
+      "depends_on": 53
+    }
+  },
+  "layers": {
+    "controllers": [
+      {
+        "name": "AssinaturaController",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/api/AssinaturaController.java",
+        "line": 14
+      },
+      {
+        "name": "BibliotecaController",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+        "line": 14
+      },
+      {
+        "name": "MusicaController",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/api/MusicaController.java",
+        "line": 13
+      },
+      {
+        "name": "UsuarioController",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/api/UsuarioController.java",
+        "line": 14
+      },
+      {
+        "name": "TransacaoController",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/api/TransacaoController.java",
+        "line": 14
+      }
+    ],
+    "services": [
+      {
+        "name": "AssinaturaApplicationService",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/application/AssinaturaApplicationService.java",
+        "line": 14
+      },
+      {
+        "name": "BibliotecaApplicationService",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+        "line": 16
+      },
+      {
+        "name": "CatalogoApplicationService",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/application/CatalogoApplicationService.java",
+        "line": 13
+      },
+      {
+        "name": "UsuarioApplicationService",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/application/UsuarioApplicationService.java",
+        "line": 12
+      },
+      {
+        "name": "AutorizacaoApplicationService",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/application/AutorizacaoApplicationService.java",
+        "line": 17
+      }
+    ],
+    "repositories": [
+      {
+        "name": "AssinaturaRepositoryImpl",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/infra/AssinaturaRepositoryImpl.java",
+        "line": 11
+      },
+      {
+        "name": "FavoritosRepositoryImpl",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/infra/FavoritosRepositoryImpl.java",
+        "line": 9
+      },
+      {
+        "name": "PlaylistRepositoryImpl",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/infra/PlaylistRepositoryImpl.java",
+        "line": 11
+      },
+      {
+        "name": "MusicaRepositoryImpl",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/infra/MusicaRepositoryImpl.java",
+        "line": 11
+      },
+      {
+        "name": "UsuarioRepositoryImpl",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/infra/UsuarioRepositoryImpl.java",
+        "line": 11
+      },
+      {
+        "name": "TransacaoRepositoryImpl",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/infra/TransacaoRepositoryImpl.java",
+        "line": 11
+      }
+    ],
+    "entities": [
+      {
+        "name": "Assinatura",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/domain/model/Assinatura.java",
+        "line": 12
+      },
+      {
+        "name": "Favoritos",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/Favoritos.java",
+        "line": 13
+      },
+      {
+        "name": "Playlist",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/Playlist.java",
+        "line": 13
+      },
+      {
+        "name": "ReferenciaMusica",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/ReferenciaMusica.java",
+        "line": 13
+      },
+      {
+        "name": "Musica",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/domain/model/Musica.java",
+        "line": 11
+      },
+      {
+        "name": "CartaoCredito",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/CartaoCredito.java",
+        "line": 9
+      },
+      {
+        "name": "Usuario",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/Usuario.java",
+        "line": 11
+      },
+      {
+        "name": "Transacao",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/model/Transacao.java",
+        "line": 14
+      },
+      {
+        "name": "ViolacaoNegocioJpa",
+        "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/model/ViolacaoNegocioJpa.java",
+        "line": 6
+      }
+    ]
+  },
+  "endpoints": [
+    {
+      "label": "DELETE /api/playlists/{playlistId}/musicas/{musicaId}",
+      "http_method": "DELETE",
+      "path": "/api/playlists/{playlistId}/musicas/{musicaId}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "removerMusica",
+          "signature": "PlaylistResponse removerMusica(@PathVariable String playlistId, @PathVariable String musicaId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 43
+        },
+        {
+          "type": "service_call",
+          "name": "removerMusicaDaPlaylist",
+          "signature": "Playlist removerMusicaDaPlaylist(String playlistId, String musicaId)",
+          "via": "bibliotecaService.removerMusicaDaPlaylist",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "label": "DELETE /api/usuarios/{usuarioId}/assinaturas/{assinaturaId}",
+      "http_method": "DELETE",
+      "path": "/api/usuarios/{usuarioId}/assinaturas/{assinaturaId}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "cancelar",
+          "signature": "AssinaturaResponse cancelar(@PathVariable String usuarioId, @PathVariable String assinaturaId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/api/AssinaturaController.java",
+          "line": 38
+        },
+        {
+          "type": "service_call",
+          "name": "cancelarPlano",
+          "signature": "Assinatura cancelarPlano(String assinaturaId)",
+          "via": "assinaturaService.cancelarPlano",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/application/AssinaturaApplicationService.java",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "label": "DELETE /api/usuarios/{usuarioId}/favoritos/{musicaId}",
+      "http_method": "DELETE",
+      "path": "/api/usuarios/{usuarioId}/favoritos/{musicaId}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "desfavoritarMusica",
+          "signature": "FavoritosResponse desfavoritarMusica(@PathVariable String usuarioId, @PathVariable String musicaId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 56
+        },
+        {
+          "type": "service_call",
+          "name": "desfavoritarMusica",
+          "signature": "Favoritos desfavoritarMusica(String usuarioId, String musicaId)",
+          "via": "bibliotecaService.desfavoritarMusica",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "label": "GET /api/musicas",
+      "http_method": "GET",
+      "path": "/api/musicas",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "listarTodas",
+          "signature": "List<MusicaResponse> listarTodas()",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/api/MusicaController.java",
+          "line": 40
+        },
+        {
+          "type": "service_call",
+          "name": "listarTodas",
+          "signature": "List<Musica> listarTodas()",
+          "via": "catalogoService.listarTodas",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/application/CatalogoApplicationService.java",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "label": "GET /api/musicas/artista/{artista}",
+      "http_method": "GET",
+      "path": "/api/musicas/artista/{artista}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "porArtista",
+          "signature": "List<MusicaResponse> porArtista(@PathVariable String artista)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/api/MusicaController.java",
+          "line": 46
+        },
+        {
+          "type": "service_call",
+          "name": "buscarPorArtista",
+          "signature": "List<Musica> buscarPorArtista(String artista)",
+          "via": "catalogoService.buscarPorArtista",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/application/CatalogoApplicationService.java",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "label": "GET /api/musicas/{id}",
+      "http_method": "GET",
+      "path": "/api/musicas/{id}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "buscarPorId",
+          "signature": "MusicaResponse buscarPorId(@PathVariable String id)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/api/MusicaController.java",
+          "line": 34
+        },
+        {
+          "type": "service_call",
+          "name": "buscarPorId",
+          "signature": "Musica buscarPorId(String id)",
+          "via": "catalogoService.buscarPorId",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/application/CatalogoApplicationService.java",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "label": "GET /api/transacoes/usuario/{usuarioId}",
+      "http_method": "GET",
+      "path": "/api/transacoes/usuario/{usuarioId}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "listarPorUsuario",
+          "signature": "List<TransacaoResponse> listarPorUsuario(@PathVariable String usuarioId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/api/TransacaoController.java",
+          "line": 34
+        },
+        {
+          "type": "service_call",
+          "name": "listarTransacoesPorUsuario",
+          "signature": "List<Transacao> listarTransacoesPorUsuario(String usuarioId)",
+          "via": "autorizacaoService.listarTransacoesPorUsuario",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/application/AutorizacaoApplicationService.java",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "label": "GET /api/usuarios",
+      "http_method": "GET",
+      "path": "/api/usuarios",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "listarTodos",
+          "signature": "List<UsuarioResponse> listarTodos()",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/api/UsuarioController.java",
+          "line": 24
+        },
+        {
+          "type": "service_call",
+          "name": "listarTodos",
+          "signature": "List<Usuario> listarTodos()",
+          "via": "usuarioService.listarTodos",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/application/UsuarioApplicationService.java",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "label": "GET /api/usuarios/{id}",
+      "http_method": "GET",
+      "path": "/api/usuarios/{id}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "buscarPorId",
+          "signature": "UsuarioResponse buscarPorId(@PathVariable String id)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/api/UsuarioController.java",
+          "line": 46
+        },
+        {
+          "type": "service_call",
+          "name": "buscarPorId",
+          "signature": "Usuario buscarPorId(String usuarioId)",
+          "via": "usuarioService.buscarPorId",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/application/UsuarioApplicationService.java",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "label": "GET /api/usuarios/{usuarioId}/assinaturas",
+      "http_method": "GET",
+      "path": "/api/usuarios/{usuarioId}/assinaturas",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "listar",
+          "signature": "List<AssinaturaResponse> listar(@PathVariable String usuarioId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/api/AssinaturaController.java",
+          "line": 32
+        },
+        {
+          "type": "service_call",
+          "name": "listarPorUsuario",
+          "signature": "List<Assinatura> listarPorUsuario(String usuarioId)",
+          "via": "assinaturaService.listarPorUsuario",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/application/AssinaturaApplicationService.java",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "label": "GET /api/usuarios/{usuarioId}/favoritos",
+      "http_method": "GET",
+      "path": "/api/usuarios/{usuarioId}/favoritos",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "buscarFavoritos",
+          "signature": "FavoritosResponse buscarFavoritos(@PathVariable String usuarioId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 62
+        },
+        {
+          "type": "service_call",
+          "name": "buscarFavoritos",
+          "signature": "Favoritos buscarFavoritos(String usuarioId)",
+          "via": "bibliotecaService.buscarFavoritos",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "label": "GET /api/usuarios/{usuarioId}/playlists",
+      "http_method": "GET",
+      "path": "/api/usuarios/{usuarioId}/playlists",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "listarPlaylists",
+          "signature": "List<PlaylistResponse> listarPlaylists(@PathVariable String usuarioId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 31
+        },
+        {
+          "type": "service_call",
+          "name": "listarPlaylistsDoUsuario",
+          "signature": "List<Playlist> listarPlaylistsDoUsuario(String usuarioId)",
+          "via": "bibliotecaService.listarPlaylistsDoUsuario",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "label": "POST /api/musicas",
+      "http_method": "POST",
+      "path": "/api/musicas",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "catalogar",
+          "signature": "MusicaResponse catalogar(@RequestBody @Valid CatalogarMusicaRequest request)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/api/MusicaController.java",
+          "line": 23
+        },
+        {
+          "type": "service_call",
+          "name": "catalogarMusica",
+          "signature": "Musica catalogarMusica(String titulo, String artista, String album, long duracaoSegundos, Genero genero)",
+          "via": "catalogoService.catalogarMusica",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/catalogo/application/CatalogoApplicationService.java",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "label": "POST /api/playlists/{playlistId}/musicas/{musicaId}",
+      "http_method": "POST",
+      "path": "/api/playlists/{playlistId}/musicas/{musicaId}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "adicionarMusica",
+          "signature": "PlaylistResponse adicionarMusica(@PathVariable String playlistId, @PathVariable String musicaId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 37
+        },
+        {
+          "type": "service_call",
+          "name": "adicionarMusicaNaPlaylist",
+          "signature": "Playlist adicionarMusicaNaPlaylist(String playlistId, String musicaId)",
+          "via": "bibliotecaService.adicionarMusicaNaPlaylist",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "label": "POST /api/transacoes",
+      "http_method": "POST",
+      "path": "/api/transacoes",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "autorizar",
+          "signature": "TransacaoResponse autorizar(@RequestBody @Valid AutorizarTransacaoRequest request)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/api/TransacaoController.java",
+          "line": 24
+        },
+        {
+          "type": "service_call",
+          "name": "autorizarTransacao",
+          "signature": "Transacao autorizarTransacao(String usuarioId, String comerciante, BigDecimal valor)",
+          "via": "autorizacaoService.autorizarTransacao",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/pagamento/application/AutorizacaoApplicationService.java",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "label": "POST /api/usuarios",
+      "http_method": "POST",
+      "path": "/api/usuarios",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "criarConta",
+          "signature": "UsuarioResponse criarConta(@RequestBody @Valid CriarContaRequest request)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/api/UsuarioController.java",
+          "line": 30
+        },
+        {
+          "type": "service_call",
+          "name": "criarConta",
+          "signature": "Usuario criarConta(String nome, String email, String senha)",
+          "via": "usuarioService.criarConta",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/application/UsuarioApplicationService.java",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "label": "POST /api/usuarios/{id}/cartao",
+      "http_method": "POST",
+      "path": "/api/usuarios/{id}/cartao",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "adicionarCartao",
+          "signature": "UsuarioResponse adicionarCartao(@PathVariable String id, @RequestBody @Valid AdicionarCartaoRequest request)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/api/UsuarioController.java",
+          "line": 38
+        },
+        {
+          "type": "service_call",
+          "name": "adicionarCartao",
+          "signature": "Usuario adicionarCartao(String usuarioId, String ultimos4Digitos, String titular, YearMonth validade)",
+          "via": "usuarioService.adicionarCartao",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/identidade/application/UsuarioApplicationService.java",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "label": "POST /api/usuarios/{usuarioId}/assinaturas",
+      "http_method": "POST",
+      "path": "/api/usuarios/{usuarioId}/assinaturas",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "contratar",
+          "signature": "AssinaturaResponse contratar(@PathVariable String usuarioId, @RequestBody @Valid ContratarPlanoRequest request)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/api/AssinaturaController.java",
+          "line": 24
+        },
+        {
+          "type": "service_call",
+          "name": "contratarPlano",
+          "signature": "Assinatura contratarPlano(String usuarioId, TipoPlano tipoPlano, BigDecimal precoMensal)",
+          "via": "assinaturaService.contratarPlano",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/assinatura/application/AssinaturaApplicationService.java",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "label": "POST /api/usuarios/{usuarioId}/favoritos/{musicaId}",
+      "http_method": "POST",
+      "path": "/api/usuarios/{usuarioId}/favoritos/{musicaId}",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "favoritarMusica",
+          "signature": "FavoritosResponse favoritarMusica(@PathVariable String usuarioId, @PathVariable String musicaId)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 49
+        },
+        {
+          "type": "service_call",
+          "name": "favoritarMusica",
+          "signature": "Favoritos favoritarMusica(String usuarioId, String musicaId)",
+          "via": "bibliotecaService.favoritarMusica",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "label": "POST /api/usuarios/{usuarioId}/playlists",
+      "http_method": "POST",
+      "path": "/api/usuarios/{usuarioId}/playlists",
+      "chain": [
+        {
+          "type": "controller_method",
+          "name": "criarPlaylist",
+          "signature": "PlaylistResponse criarPlaylist(@PathVariable String usuarioId, @RequestBody @Valid CriarPlaylistRequest request)",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+          "line": 23
+        },
+        {
+          "type": "service_call",
+          "name": "criarPlaylist",
+          "signature": "Playlist criarPlaylist(String usuarioId, String nome)",
+          "via": "bibliotecaService.criarPlaylist",
+          "file": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+          "line": 26
+        }
+      ]
+    }
+  ],
+  "call_chains": [],
+  "files": [
+    {
+      "path": "CLAUDE.md",
+      "symbols": [
+        {
+          "type": "note",
+          "name": "CLAUDE.md"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/StramingSongApplication.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "StramingSongApplication"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/api/AssinaturaController.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AssinaturaController"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/application/AssinaturaApplicationService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AssinaturaApplicationService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/domain/model/Assinatura.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Assinatura"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/domain/model/StatusAssinatura.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "StatusAssinatura"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/domain/model/TipoPlano.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "TipoPlano"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/domain/repository/AssinaturaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "AssinaturaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/domain/service/AssinaturaService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AssinaturaService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/infra/AssinaturaJpaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "AssinaturaJpaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/assinatura/infra/AssinaturaRepositoryImpl.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AssinaturaRepositoryImpl"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/acl/CatalogoAdapter.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "CatalogoAdapter"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/acl/CatalogoPort.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "CatalogoPort"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/api/BibliotecaController.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "BibliotecaController"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/application/BibliotecaApplicationService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "BibliotecaApplicationService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/Favoritos.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Favoritos"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/Playlist.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Playlist"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/PlaylistId.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "PlaylistId"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/model/ReferenciaMusica.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "ReferenciaMusica"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/repository/FavoritosRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "FavoritosRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/domain/repository/PlaylistRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "PlaylistRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/infra/FavoritosJpaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "FavoritosJpaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/infra/FavoritosRepositoryImpl.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "FavoritosRepositoryImpl"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/infra/PlaylistJpaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "PlaylistJpaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/biblioteca/infra/PlaylistRepositoryImpl.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "PlaylistRepositoryImpl"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/api/MusicaController.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "MusicaController"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/application/CatalogoApplicationService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "CatalogoApplicationService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/domain/model/Genero.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Genero"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/domain/model/Musica.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Musica"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/domain/model/MusicaId.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "MusicaId"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/domain/repository/MusicaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "MusicaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/infra/MusicaJpaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "MusicaJpaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/catalogo/infra/MusicaRepositoryImpl.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "MusicaRepositoryImpl"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/api/UsuarioController.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "UsuarioController"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/application/UsuarioApplicationService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "UsuarioApplicationService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/CartaoCredito.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "CartaoCredito"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/CriptografadorSenha.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "CriptografadorSenha"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/Email.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Email"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/Senha.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Senha"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/StatusCartao.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "StatusCartao"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/Usuario.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Usuario"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/model/UsuarioId.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "UsuarioId"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/repository/UsuarioRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "UsuarioRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/domain/service/CadastroUsuarioService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "CadastroUsuarioService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/infra/BcryptCriptografadorSenha.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "BcryptCriptografadorSenha"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/infra/UsuarioJpaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "UsuarioJpaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/identidade/infra/UsuarioRepositoryImpl.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "UsuarioRepositoryImpl"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/api/TransacaoController.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "TransacaoController"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/application/AutorizacaoApplicationService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AutorizacaoApplicationService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/model/StatusTransacao.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "StatusTransacao"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/model/Transacao.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "Transacao"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/model/ViolacaoNegocio.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "ViolacaoNegocio"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/model/ViolacaoNegocioJpa.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "ViolacaoNegocioJpa"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/repository/TransacaoRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "TransacaoRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/rules/AltaFrequenciaPequenoIntervaloRule.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AltaFrequenciaPequenoIntervaloRule"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/rules/CartaoInativoRule.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "CartaoInativoRule"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/rules/ContextoAvaliacao.java",
+      "symbols": []
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/rules/RegraAntifraude.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "RegraAntifraude"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/rules/TransacaoDuplicadaRule.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "TransacaoDuplicadaRule"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/domain/service/AutorizacaoTransacaoService.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AutorizacaoTransacaoService"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/infra/TransacaoJpaRepository.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "TransacaoJpaRepository"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/pagamento/infra/TransacaoRepositoryImpl.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "TransacaoRepositoryImpl"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/shared/domain/AggregateRoot.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "AggregateRoot"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/shared/domain/DomainEvent.java",
+      "symbols": [
+        {
+          "type": "contract",
+          "name": "DomainEvent"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/shared/domain/DomainException.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "DomainException"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/shared/domain/GlobalExceptionHandler.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "GlobalExceptionHandler"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/shared/infra/CorsConfig.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "CorsConfig"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/EstevezAlvarez/StramingSong/shared/infra/YearMonthConverter.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "YearMonthConverter"
+        }
+      ]
+    },
+    {
+      "path": "src/test/java/EstevezAlvarez/StramingSong/StramingSongApplicationTests.java",
+      "symbols": [
+        {
+          "type": "class",
+          "name": "StramingSongApplicationTests"
+        }
+      ]
+    }
+  ]
+}
